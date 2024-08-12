@@ -44,7 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintStart_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etMinute" />
-
     <EditText
         android:id="@+id/etMinute"
         android:layout_width="300dp"
@@ -57,14 +56,27 @@
         android:autofillHints="username"
         app:layout_constraintTop_toBottomOf="@+id/etHour" />
 
-
-    <androidx.appcompat.widget.SwitchCompat
+    <Switch
         android:id="@+id/simpleSwitch1"
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="Enable Notifications"
-        android:contentDescription="Switch to enable or disable notifications"
-        tools:ignore="HardCodedText,MissingConstraints" />
+        android:layout_marginTop="150dp"
+        android:checked="true"
+        android:elevation="2dp"
+        android:text="Notification\n +Overlap with Music\n[Plays for 10s]"
+        android:textColor="@color/black"
+        android:textOff="Off"
+        android:textOn="On"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml,TextSizeCheck"
+        tools:visibility="visible" />
+
 
     <Button
         android:id="@+id/cancelalarm"
